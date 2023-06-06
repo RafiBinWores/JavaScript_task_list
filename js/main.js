@@ -6,7 +6,8 @@ let taskList = document.querySelector('ul');
 
 // define event listener
 taskAdd.addEventListener('click', addTask);
-taskList.addEventListener('click', removeTask)
+taskList.addEventListener('click', removeTask);
+clearBtn.addEventListener('click', clearTask);
 
 // function define
 // add task
@@ -33,5 +34,12 @@ function removeTask(e){
             let ele = e.target.parentElement;
             ele.remove();
         }
+    }
+}
+
+//clear task
+function clearTask(e){
+    while(taskList.firstChild){
+        taskList.removeChild(taskList.firstChild);
     }
 }
