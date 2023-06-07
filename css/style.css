@@ -63,11 +63,23 @@ input {
   cursor: pointer;
 }
 ul li {
-  list-style: circle;
+  /* list-style: decimal; */
   margin-left: 15px;
   font-size: 18px;
-  padding: 12px 8px 12px 10px;
+  padding: 12px 8px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+/* ul li::before {
+  content: "";
+  position: absolute;
+  background-color: #9e15bf;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: -1;
+} */
 ul li a {
   margin-left: 20px;
   text-decoration: none;
@@ -78,8 +90,8 @@ ul li a {
   background: none;
   border: none;
   outline: none;
-  margin-top: 10px;
-  padding: 10px 24px;
+  margin-top: 20px;
+  padding: 10px 20px;
   background-color: var(--primary-color);
   color: var(--white-color);
   border-radius: 5px;
